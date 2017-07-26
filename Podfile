@@ -12,6 +12,7 @@ pod 'Alamofire', '~> 4.4'
 pod 'ObjectMapper', '~> 2.2'
 pod 'RSKImageCropper'
 pod 'GrowingTextView'
+pod 'KeychainAccess'
 
   target 'ComponentsTests' do
     inherit! :search_paths
