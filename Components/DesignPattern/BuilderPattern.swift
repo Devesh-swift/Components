@@ -32,9 +32,10 @@ struct BurgerOld {
 }
 
 
-class ImplementationOfBurgerOld { // need to mention all parameters
-    
+class ImplementationOfBurgerOld {
     init() {
+        // need to mention all parameters while making an object for BurgerOld
+        
         let hamburger = BurgerOld(name: "hamburger", patties: 1, bacon: false, pickles: false, ketchup: true, mustard: false, lettuce: true, tomato: false ,cheese:true)
     }
 }
@@ -131,6 +132,44 @@ class ImplementationOfNewStyle {
 }
 
 
-// 2nd approch single builder type
+// 2nd approch single builder type which return intsance of old burger
+
+struct NewBurgerBuilder {
+    // initialise all var to default
+    
+    var name     =  "BUrger"
+    var patties  = 1
+    var bacon    = false
+    var pickles  = true
+    var ketchup  = false
+    var mustard  = true
+    var lettuce  = false
+    var tomato   = true
+    var cheese   = true
+    
+    mutating func setPatties(choice:Int)  {self.patties = choice}
+    mutating func setbacon(choice:Bool)   {self.bacon = choice}
+    mutating func setpickles(choice:Bool) {self.pickles = choice}
+    mutating func setketchup(choice:Bool) {self.ketchup = choice}
+    mutating func setmustard(choice:Bool) {self.mustard = choice}
+    mutating func setlettuce(choice:Bool) {self.lettuce = choice}
+    mutating func settomato(choice:Bool)  {self.tomato = choice}
+    mutating func setcheese(choice:Bool)  {self.cheese = choice}
+
+    func buildBurgerOld(name:String) -> BurgerOld {
+      return  BurgerOld(name: name, patties: patties, bacon: bacon, pickles: pickles, ketchup: ketchup, mustard: mustard, lettuce: lettuce, tomato: tomato, cheese: cheese)
+    }
+}
+
+
+class ImplementationOfSecondApproch {
+    init() {
+        var burger = NewBurgerBuilder() // Newburger intsance
+        burger.setbacon(choice: true) // set values to modify
+        burger.setcheese(choice: false) // set values to modify
+      let newBUrger =   burger.buildBurgerOld(name: "refacored burger") // get old burger instance
+        
+    }
+}
 
 
