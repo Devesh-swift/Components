@@ -16,6 +16,7 @@
 		FA4A65521F28F16600ED6138 /* ComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4A65511F28F16600ED6138 /* ComponentsTests.swift */; };
 		FA4C691C1F30E6BA0079A8C9 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C691B1F30E6BA0079A8C9 /* Singleton.swift */; };
 		FA4C691E1F30E90F0079A8C9 /* BuilderPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C691D1F30E90F0079A8C9 /* BuilderPattern.swift */; };
+		FA4C69221F30F8100079A8C9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C69211F30F8100079A8C9 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		FA4A65531F28F16600ED6138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA4C691B1F30E6BA0079A8C9 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		FA4C691D1F30E90F0079A8C9 /* BuilderPattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderPattern.swift; sourceTree = "<group>"; };
+		FA4C69211F30F8100079A8C9 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +113,7 @@
 		FA4A653B1F28F16500ED6138 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				FA4C691F1F30F75E0079A8C9 /* Network */,
+				FA4C69201F30F7F60079A8C9 /* Network */,
 				FA4C691A1F30E69E0079A8C9 /* DesignPattern */,
 				FA4A653C1F28F16500ED6138 /* AppDelegate.swift */,
 				FA4A653E1F28F16500ED6138 /* ViewController.swift */,
@@ -140,9 +142,10 @@
 			path = DesignPattern;
 			sourceTree = "<group>";
 		};
-		FA4C691F1F30F75E0079A8C9 /* Network */ = {
+		FA4C69201F30F7F60079A8C9 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				FA4C69211F30F8100079A8C9 /* NetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			files = (
 				FA4C691E1F30E90F0079A8C9 /* BuilderPattern.swift in Sources */,
 				FA4A653F1F28F16500ED6138 /* ViewController.swift in Sources */,
+				FA4C69221F30F8100079A8C9 /* NetworkManager.swift in Sources */,
 				FA4C691C1F30E6BA0079A8C9 /* Singleton.swift in Sources */,
 				FA4A653D1F28F16500ED6138 /* AppDelegate.swift in Sources */,
 			);
