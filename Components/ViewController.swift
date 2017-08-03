@@ -12,6 +12,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        getDataFromServer()
+    }
+    
+    func getDataFromServer() {
+        SampleDataService().getDataFromServer(params: ["key":"value"]).then { sampleData -> () in
+            print(sampleData)
+        }.catch { (error) in
+            print(error)
+        }
     }
 }
 

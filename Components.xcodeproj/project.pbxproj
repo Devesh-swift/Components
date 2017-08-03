@@ -17,6 +17,16 @@
 		FA4C691C1F30E6BA0079A8C9 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C691B1F30E6BA0079A8C9 /* Singleton.swift */; };
 		FA4C691E1F30E90F0079A8C9 /* BuilderPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C691D1F30E90F0079A8C9 /* BuilderPattern.swift */; };
 		FA4C69221F30F8100079A8C9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4C69211F30F8100079A8C9 /* NetworkManager.swift */; };
+		FAB94D771F33549400C4DC6D /* ServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB94D761F33549400C4DC6D /* ServiceType.swift */; };
+		FAB94D791F33559400C4DC6D /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB94D781F33559400C4DC6D /* NetworkClient.swift */; };
+		FAB94D7B1F335C9200C4DC6D /* AlamofireCient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB94D7A1F335C9200C4DC6D /* AlamofireCient.swift */; };
+		FAB94D7D1F335F8B00C4DC6D /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB94D7C1F335F8B00C4DC6D /* Environment.swift */; };
+		FAB94D7F1F33617700C4DC6D /* SharedSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB94D7E1F33617700C4DC6D /* SharedSettings.swift */; };
+		FAB94D811F3369C200C4DC6D /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB94D801F3369C200C4DC6D /* NetworkError.swift */; };
+		FAB94D831F33747000C4DC6D /* MappingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB94D821F33747000C4DC6D /* MappingContext.swift */; };
+		FAB94D851F3376F200C4DC6D /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB94D841F3376F200C4DC6D /* BaseResponse.swift */; };
+		FAB94D871F33797000C4DC6D /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB94D861F33797000C4DC6D /* SampleData.swift */; };
+		FAB94D891F337CC400C4DC6D /* SampleDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB94D881F337CC400C4DC6D /* SampleDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +58,16 @@
 		FA4C691B1F30E6BA0079A8C9 /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		FA4C691D1F30E90F0079A8C9 /* BuilderPattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderPattern.swift; sourceTree = "<group>"; };
 		FA4C69211F30F8100079A8C9 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FAB94D761F33549400C4DC6D /* ServiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceType.swift; sourceTree = "<group>"; };
+		FAB94D781F33559400C4DC6D /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		FAB94D7A1F335C9200C4DC6D /* AlamofireCient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireCient.swift; sourceTree = "<group>"; };
+		FAB94D7C1F335F8B00C4DC6D /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		FAB94D7E1F33617700C4DC6D /* SharedSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedSettings.swift; sourceTree = "<group>"; };
+		FAB94D801F3369C200C4DC6D /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		FAB94D821F33747000C4DC6D /* MappingContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MappingContext.swift; sourceTree = "<group>"; };
+		FAB94D841F3376F200C4DC6D /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		FAB94D861F33797000C4DC6D /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		FAB94D881F337CC400C4DC6D /* SampleDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +133,8 @@
 		FA4A653B1F28F16500ED6138 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				FAB94D751F33549400C4DC6D /* Services */,
+				FAB94D741F33548400C4DC6D /* Model */,
 				FA4C69201F30F7F60079A8C9 /* Network */,
 				FA4C691A1F30E69E0079A8C9 /* DesignPattern */,
 				FA4A653C1F28F16500ED6138 /* AppDelegate.swift */,
@@ -146,8 +168,32 @@
 			isa = PBXGroup;
 			children = (
 				FA4C69211F30F8100079A8C9 /* NetworkManager.swift */,
+				FAB94D781F33559400C4DC6D /* NetworkClient.swift */,
+				FAB94D7A1F335C9200C4DC6D /* AlamofireCient.swift */,
+				FAB94D7C1F335F8B00C4DC6D /* Environment.swift */,
+				FAB94D7E1F33617700C4DC6D /* SharedSettings.swift */,
+				FAB94D801F3369C200C4DC6D /* NetworkError.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		FAB94D741F33548400C4DC6D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAB94D821F33747000C4DC6D /* MappingContext.swift */,
+				FAB94D841F3376F200C4DC6D /* BaseResponse.swift */,
+				FAB94D861F33797000C4DC6D /* SampleData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAB94D751F33549400C4DC6D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FAB94D761F33549400C4DC6D /* ServiceType.swift */,
+				FAB94D881F337CC400C4DC6D /* SampleDataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,11 +397,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB94D891F337CC400C4DC6D /* SampleDataService.swift in Sources */,
 				FA4C691E1F30E90F0079A8C9 /* BuilderPattern.swift in Sources */,
+				FAB94D871F33797000C4DC6D /* SampleData.swift in Sources */,
 				FA4A653F1F28F16500ED6138 /* ViewController.swift in Sources */,
+				FAB94D7B1F335C9200C4DC6D /* AlamofireCient.swift in Sources */,
+				FAB94D7F1F33617700C4DC6D /* SharedSettings.swift in Sources */,
 				FA4C69221F30F8100079A8C9 /* NetworkManager.swift in Sources */,
+				FAB94D7D1F335F8B00C4DC6D /* Environment.swift in Sources */,
 				FA4C691C1F30E6BA0079A8C9 /* Singleton.swift in Sources */,
+				FAB94D791F33559400C4DC6D /* NetworkClient.swift in Sources */,
+				FAB94D831F33747000C4DC6D /* MappingContext.swift in Sources */,
 				FA4A653D1F28F16500ED6138 /* AppDelegate.swift in Sources */,
+				FAB94D811F3369C200C4DC6D /* NetworkError.swift in Sources */,
+				FAB94D771F33549400C4DC6D /* ServiceType.swift in Sources */,
+				FAB94D851F3376F200C4DC6D /* BaseResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
