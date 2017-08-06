@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Joy View Controller-->
+        <scene sceneID="EFl-BC-Y72">
+            <objects>
+                <viewController id="Uz5-rY-HGV" customClass="JoyViewController" customModule="Components" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3ab-i5-x6w"/>
+                        <viewControllerLayoutGuide type="bottom" id="vah-Yx-5IE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Obg-wG-IUX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ycd-R8-ipS">
+                                <rect key="frame" x="0.0" y="445" width="320" height="35"/>
+                                <color key="backgroundColor" red="0.79821714743589745" green="0.022406144681883521" blue="0.023544602846480904" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Gp7-Rz-f7E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05c-na-U0G" customClass="FXPageControl">
+                                <rect key="frame" x="60" y="414" width="200" height="15"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="RhU-Ae-VqG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dotShadowBlur">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21863283159999999" green="0.57834348999999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="05c-na-U0G" secondAttribute="trailing" constant="60" id="5z3-Gs-xc0"/>
+                            <constraint firstAttribute="trailing" secondItem="Ycd-R8-ipS" secondAttribute="trailing" id="Iil-eg-mGm"/>
+                            <constraint firstItem="05c-na-U0G" firstAttribute="leading" secondItem="Obg-wG-IUX" secondAttribute="leading" constant="60" id="KW6-fG-O1u"/>
+                            <constraint firstItem="Ycd-R8-ipS" firstAttribute="top" secondItem="05c-na-U0G" secondAttribute="bottom" constant="16" id="RlY-Vw-m6M"/>
+                            <constraint firstItem="Ycd-R8-ipS" firstAttribute="leading" secondItem="Obg-wG-IUX" secondAttribute="leading" id="crv-nW-Nhk"/>
+                            <constraint firstItem="vah-Yx-5IE" firstAttribute="top" secondItem="Ycd-R8-ipS" secondAttribute="bottom" id="uva-Ze-pll"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yMM-QD-SW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-701.25" y="175"/>
+        </scene>
+        <!--Joy Page View-->
+        <scene sceneID="DOP-ig-pSB">
+            <objects>
+                <viewController storyboardIdentifier="JoyPageView" id="NVS-Th-RF5" customClass="JoyPageView" customModule="Components" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZbI-VA-d87"/>
+                        <viewControllerLayoutGuide type="bottom" id="j2S-M0-E6b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X29-Qs-eQ1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="c0Y-mZ-qXL">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c0Y-mZ-qXL" firstAttribute="top" secondItem="ZbI-VA-d87" secondAttribute="bottom" id="5vQ-bi-dU9"/>
+                            <constraint firstItem="c0Y-mZ-qXL" firstAttribute="leading" secondItem="X29-Qs-eQ1" secondAttribute="leading" id="81C-Kw-MzN"/>
+                            <constraint firstAttribute="trailing" secondItem="c0Y-mZ-qXL" secondAttribute="trailing" id="fpc-yU-Bzh"/>
+                            <constraint firstItem="j2S-M0-E6b" firstAttribute="top" secondItem="c0Y-mZ-qXL" secondAttribute="bottom" id="wl6-KA-lLB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HZf-OD-C3R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173" y="194"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="378" height="500"/>
+    </resources>
+</document>

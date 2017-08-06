@@ -18,6 +18,7 @@ protocol NetworkRequest {
 }
 
 extension NetworkRequest {
+    @discardableResult
     func   responseJSON(completionHandler: @escaping (DataResponse<Any>) -> Void) -> Self {
       return  responseJSON(queue: nil, options: .allowFragments, completionHandler: completionHandler)
     }
